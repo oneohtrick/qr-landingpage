@@ -1,0 +1,65 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    background: var(--slate300);
+}
+
+:root{
+    --slate300: hsl(212, 45%, 89%);
+    --slate500: hsl(216, 15%, 48%);
+    --slate900: hsl(218, 44%, 22%);
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+     background: var(--slate300);
+    }
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+/* Main page */
+main{
+    height: 98vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background: #fff;
+    max-width: 350px;
+    padding: 1.2rem 1.2rem 2.5rem;
+    border-radius: 28px;
+    box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.06), 
+    0 10px 20px rgba(0, 0, 0, 0.04); 
+}
+
+/* Content */
+.qr-code{
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 1rem;
+}
+
+.card-subtitle{
+    font-size: 1.3rem;
+    color: var(--slate900);
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-text{
+    font-size: 15px;
+    color: var(--slate500);
+    padding: 0 1.8rem;
+}
